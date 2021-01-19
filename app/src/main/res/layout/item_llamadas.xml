@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="5dp"
+        android:layout_marginBottom="0.5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="8dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgPerfil"
+                android:layout_width="78dp"
+                android:layout_height="47dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="-8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="0dp"
+                app:civ_border_color="#FF000000" />
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/imgPerfil"
+                android:text="Carlos"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgIconoLlamadaSaliente"
+                android:layout_width="37dp"
+                android:layout_height="19dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="297dp"
+                android:layout_toRightOf="@id/imgPerfil"
+                android:background="#FFFCFC"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:visibility="visible"
+                app:showAsAction="always"
+                app:srcCompat="@drawable/ic_llamadasaliente"
+                app:tint="#4C8807" />
+
+            <TextView
+                android:id="@+id/txtInferior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtName"
+                android:layout_marginLeft="-290dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/imgIconoLlamadaSaliente"
+                android:text="Ayer 14:12"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <ImageView
+                android:id="@+id/imgIconoLlamada"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:visibility="visible"
+                app:showAsAction="always"
+                app:srcCompat="@drawable/ic_llamadavoz"
+                app:tint="@color/purple_700" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
